@@ -1,0 +1,338 @@
+$icon-font-path: '../fonts/';
+$fa-font-path:   "../fonts/webfonts";
+// bower:scss
+@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+@import "bower_components/components-font-awesome/scss/fontawesome.scss";
+// endbower
+
+
+
+//variables
+
+$text-color: white;
+$main-color: #6146D7;
+$bg-color: #27253f;
+$dark-text-color: #212B36;
+
+
+//
+//@font-face {
+//  font-family: "Fjalla One";
+//  src: url($icon-font-path + "Fjalla One/Fjalla One_Regular") format("woff");
+//}
+//
+//@font-face {
+//  font-family: 'Open Sans';
+//  src: url($icon-font-path + "") format("woff");
+//}
+
+
+
+//
+
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* Space out content a bit */
+
+body{
+  color: $text-color;
+  font-family: "Open Sans", sans-serif;
+}
+
+.header{
+  background-color: $bg-color;
+  min-height: 970px;
+  padding-top: 35px;
+
+  .top-nav{
+    list-style: none;
+    text-align: center;
+
+    font-weight: bold;
+    li {
+      display: inline-block;
+      margin-left: 20px;
+      margin-right: 20px;
+      border-bottom: 2px solid transparent;
+      &:hover {
+        border-bottom: 2px solid $text-color;
+
+
+      }
+      transition: all ease 0.5s;
+      a{
+        text-decoration: none;
+        color: $text-color;
+        text-transform: uppercase;
+        letter-spacing: 6px;
+        font-size: 15px;
+        font-weight: bold;
+      }
+
+    }
+
+  }
+
+  .header-middle{
+    margin-top: 133px;
+    .left-side{
+      margin-top: 70px;
+    }
+    h1{
+      font-size:55px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      font-family: "Fjalla One", sans-serif;
+      letter-spacing: 3px;
+
+    }
+    h4{
+      margin-top: 10px;
+      font-weight: 300;
+      margin-bottom: 50px;
+      letter-spacing: 2px;
+      line-height: 25px;
+
+
+    }
+
+    a{
+      //margin-top: 20px !important;
+      padding: 15px;
+
+      //vertical-align: middle;
+      @extend .button;
+      i{
+        margin-left: 10px;
+        font-size: 25px;
+
+      }
+      span{
+        font-size: 14px;
+      }
+      &:hover{
+        background-color: lighten($main-color, 10%);
+      }
+      &:active {
+        background-color: darken($main-color, 10%);
+    }
+    }
+
+
+
+    .rectangle{
+      width: 320px;
+      height: 424px;
+      margin-bottom:51px;
+      //background-color: #fff;
+      position: relative;
+      padding-top: 30px;
+      background-color: #f6f2f2;
+
+      border-radius: 4px;
+      border-bottom: 4px solid #D8D8D8;
+
+
+      .rectangle-top{
+
+        .back{
+
+          svg{
+            margin-left: 30px;
+          }
+
+
+        }
+
+        .measure-text{
+          color: $bg-color;
+          display: inline-block;
+          float: right;
+          font-size: 24px;
+          font-weight:bold;
+          //.fjalla-one;
+          margin-right: 30px;
+          font-family: 'Fjalla One', sans-serif;
+
+        }
+        .text{
+          color: $bg-color;
+          text-align: center;
+          margin-top: 60px;
+
+        }
+
+
+
+        .descr{
+          margin-top: 25px;
+
+
+          .descr-text{
+            color: $bg-color;
+            text-align: left;
+            margin-left: 25px;
+
+          }
+          .descr-img{
+              text-align: center;
+            margin-bottom: 10px;
+          }
+        }
+        
+        
+        .statistics{
+          background-color: #fff;
+          padding: 10px 0;
+
+          //line-height: 2px;
+          .descr-img {
+            text-align: right;
+            display: inline-block;
+            margin-left: 15px;
+
+          }
+          .descr-measure{
+            color: $dark-text-color;
+            font-weight:bold;
+            font-size: 28px;
+            margin-left: 25px;
+            display: inline-block;
+            font-family: "Fjalla One", sans-serif;
+
+          }
+          .descr-text{
+            font-size:13px;
+            margin-top: 7px;
+            letter-spacing: 1px;
+          }
+        }
+
+
+
+
+      }
+
+
+
+
+    }
+  }
+
+  .header-bottom{
+    position: relative;
+    .bg{
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: 0;
+    }
+    .benefits{
+      border-radius: 3px;
+      position: relative;
+      background-color: #fff;
+      min-height: 130px;
+      width: 100%;
+      z-index: 1;
+      padding-left: 17px;
+      padding-top: 32px;
+      border-bottom: 2px solid #D4D4D4;
+
+
+
+      .benefit{
+
+        border-right: 2px solid #EAEAEA;
+        padding-right: 10px;
+
+        .benefit-img{
+          display: inline-block;
+          vertical-align: middle;
+          //margin-left: 5px;
+          margin-right: 10px;
+
+        }
+
+        p{
+          font-size: 18px;
+          font-weight: 300;
+          color: #575757;
+          display: inline-block;
+
+
+
+        }
+
+
+
+
+      }
+
+    }
+
+
+    .description{
+      background-color: #fff;
+      color: #575757;
+      position: relative;
+      padding: 30px;
+      min-height: 230px;
+      border-radius: 4px;
+
+      h2{
+        color: #27253F;
+        font-family: "Fjalla One",sans-serif;
+        font-size: 55px;
+        font-weight: normal;
+        text-align: right;
+        text-transform: uppercase;
+        margin-top:0;
+      }
+
+
+    }
+  }
+
+
+
+
+
+}
+
+
+//extends
+
+.no-border{
+  border: none !important;
+}
+
+.button {
+  background-color: $main-color;
+  border: none;
+  border-radius: 3px;
+  height: 52px;
+  min-width: 176px;
+  //text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: left;
+  color: white;
+  line-height: 26px;
+}
+
+//extends end
+
+
+
+
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+
+}
