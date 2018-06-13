@@ -1,7 +1,41 @@
 $icon-font-path: '../fonts/';
+$fa-font-path:   "../fonts/webfonts";
 // bower:scss
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+@import "bower_components/components-font-awesome/scss/fontawesome.scss";
 // endbower
+
+
+
+//variables
+
+$text-color: white;
+$main-color: #6146D7;
+$bg-color: #27253f;
+$dark-text-color: #212B36;
+
+
+//
+//@font-face {
+//  font-family: "Fjalla One";
+//  src: url($icon-font-path + "Fjalla One/Fjalla One_Regular") format("woff");
+//}
+//
+//@font-face {
+//  font-family: 'Open Sans';
+//  src: url($icon-font-path + "") format("woff");
+//}
+
+
+
+//
+
+
+// bower:scss
+@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+@import "bower_components/components-font-awesome/scss/fontawesome.scss";
+// endbower
+
 
 .browserupgrade {
   margin: 0.2em 0;
@@ -10,83 +44,495 @@ $icon-font-path: '../fonts/';
   padding: 0.2em 0;
 }
 
-/* Space out content a bit */
-body {
-  padding-top: 20px;
-  padding-bottom: 20px;
+
+
+body{
+  color: $text-color;
+  font-family: "Open Sans", sans-serif;
+  background-color: $bg-color;
 }
 
-/* Everything but the jumbotron gets side spacing for mobile first views */
-.header,
-.marketing,
-.footer {
-  padding-right: 15px;
-  padding-left: 15px;
+.header{
+
+  min-height: 970px;
+  padding-top: 35px;
+
+  .top-nav{
+    list-style: none;
+    text-align: center;
+
+    font-weight: bold;
+    li {
+      display: inline-block;
+      margin-left: 20px;
+      margin-right: 20px;
+      border-bottom: 2px solid transparent;
+      cursor: pointer;
+      &:hover {
+        border-bottom: 2px solid $text-color;
+
+
+      }
+      transition: all ease 0.5s;
+      a{
+        text-decoration: none;
+        color: $text-color;
+        text-transform: uppercase;
+        letter-spacing: 6px;
+        font-size: 15px;
+        font-weight: bold;
+      }
+
+    }
+
+  }
+
+  .header-middle{
+    margin-top: 133px;
+    .left-side{
+      margin-top: 70px;
+    }
+    h1{
+      font-size:55px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      font-family: "Fjalla One", sans-serif;
+      letter-spacing: 3px;
+
+    }
+    h4{
+      margin-top: 10px;
+      font-weight: 300;
+      margin-bottom: 50px;
+      letter-spacing: 2px;
+      line-height: 25px;
+
+
+    }
+
+    a{
+      //margin-top: 20px !important;
+      padding: 15px;
+
+      //vertical-align: middle;
+      @extend .button;
+      i{
+        margin-left: 10px;
+        font-size: 25px;
+
+      }
+      span{
+        font-size: 14px;
+      }
+      &:hover{
+        background-color: lighten($main-color, 10%);
+      }
+      &:active {
+        background-color: darken($main-color, 10%);
+    }
+    }
+
+
+
+
+  }
+
+  .header-bottom{
+    position: relative;
+    .bg{
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: 0;
+    }
+    .benefits{
+      border-radius: 3px;
+      position: relative;
+      background-color: #fff;
+      min-height: 130px;
+      width: 100%;
+      z-index: 1;
+      padding-left: 17px;
+      padding-top: 32px;
+      border-bottom: 2px solid #D4D4D4;
+
+
+
+      .benefit{
+
+        border-right: 2px solid #EAEAEA;
+        padding-right: 10px;
+
+        .benefit-img{
+          display: inline-block;
+          vertical-align: middle;
+          //margin-left: 5px;
+          margin-right: 10px;
+
+        }
+
+        p{
+          font-size: 18px;
+          font-weight: 300;
+          color: #575757;
+          display: inline-block;
+
+
+
+        }
+
+
+
+
+      }
+
+    }
+
+
+    .description{
+      background-color: #fff;
+      color: #575757;
+      position: relative;
+      padding: 30px;
+      min-height: 230px;
+      border-radius: 4px;
+
+      h2{
+        color: #27253F;
+        font-family: "Fjalla One",sans-serif;
+        font-size: 55px;
+        font-weight: normal;
+        text-align: right;
+        text-transform: uppercase;
+        margin-top:0;
+      }
+
+
+    }
+  }
+
+
+
+
+
 }
 
-/* Custom page header */
-.header {
-  padding-bottom: 20px;
-  border-bottom: 1px solid #e5e5e5;
+.snippets{
+  margin-top:150px;
+  .left-boxes{
+
+    .left-box-item{
+      background-color: #2D2A48;
+      color: #FBFBFB;
+      height: 120px;
+      border: 2px solid #6146D7;
+      font-size: 55px;
+      text-align: right;
+      padding-right: 20px;
+      padding-top: 25px;
+      font-family: "Fjalla One", sans-serif;
+      border-radius: 4px;
+      margin-bottom: 30px;
+    }
+  }
+
+  .circle{
+    border: 4px solid #AE9BFF;
+    background-color: transparent;
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+    font-family: "Fjalla One", sans-serif;
+    font-size:28px;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 15px;
+    margin-left: 400px;
+    &:after{
+      content: "";
+      position: absolute;
+      left: 447px;
+      top: 100px;
+      right: 0;
+      //border-top: 6px solid white;
+      background-color: white;
+
+      z-index: 2;
+      //transform: rotate(90deg);
+      width: 6px;
+      height: 85px;
+    }
+
+
+
+  }
+
+  .right-text{
+    background-color: #6146D7;
+    border: 1px solid #979797;
+    border-radius: 4px;
+    padding: 40px 45px;
+    margin-top: 75px;
+    h3{
+      font-size: 55px;
+      font-family: "Fjalla One", sans-serif;
+      text-transform: uppercase;
+    }
+    p{
+      font-weight: 300;
+      font-size: 22px;
+      letter-spacing: 1px;
+      line-height: 30px;
+    }
+  }
+
 }
 
-/* Make the masthead heading the same height as the navigation */
-.header h3 {
-  margin-top: 0;
-  margin-bottom: 0;
-  line-height: 40px;
-}
 
-/* Custom page footer */
-.footer {
-  padding-top: 19px;
-  color: #777;
-  border-top: 1px solid #e5e5e5;
-}
+section{
+  margin-top: 140px;
+  h2{
+    font-family: "Fjalla One", sans-serif;
+    font-size: 50px;
+    text-align: center;
+    text-transform: uppercase;
 
-/* Customize container */
-@media (min-width: 768px) {
-  .container {
-    max-width: 730px;
+  }
+  p{
+    text-align: center;
+    font-weight: 200;
+    margin-top: 20px;
+    font-size: 20px;
+
   }
 }
-.container-narrow > hr {
-  margin: 30px 0;
+
+.features{
+  .content{
+    margin-top: 80px;
+  }
+  p{
+    //margin-bottom: 80px;
+  }
+
+  .feature-left{
+    margin-top: 40px;
+    .feature-left-item{
+      text-align: right;
+      margin-bottom: 25px;
+
+      p{
+        font-weight: 300;
+        font-size: 20px;
+        text-align: right;
+        margin-top: 0;
+
+      }
+      i {
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+
+  .feature-right{
+    margin-top: 50px;
+   p{
+     text-align: left;
+   }
+
+    .feature-right-item{
+      text-align: left;
+      margin-bottom: 15px;
+
+     
+      i {
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  .rectangle{
+    width: 100%;
+    .statistics{
+      .descr-img{
+        margin-left: 40px !important;
+      }
+    }
+
+
+  }
+
+
 }
 
-/* Main marketing message and sign up button */
-.jumbotron {
-  text-align: center;
-  border-bottom: 1px solid #e5e5e5;
-}
-.jumbotron .btn {
-  padding: 14px 24px;
-  font-size: 21px;
+.stats{
+  .content{
+    margin-top: 45px;
+    .graph-item{
+      p{
+        font-family: "Fjalla One", sans-serif;
+        text-align: right;
+        font-size: 34px;
+        margin-right: 20px;
+
+      }
+      padding: 15px;
+      padding-top: 5px;
+      height: 180px;
+
+      .graph-img{
+        margin-left: 30px;
+        margin-bottom: 30px;
+      }
+      margin-bottom: 20px;
+
+
+      border: 2px solid #6146D7 ;
+    }
+  }
 }
 
-/* Supporting marketing content */
-.marketing {
-  margin: 40px 0;
-}
-.marketing p + h4 {
-  margin-top: 28px;
+.integration{
+
+  .content{
+    margin-top: 60px;
+    margin-left: 40px;
+  }
+
+  ul{
+    list-style: none;
+    li{
+      display: inline-block;
+      margin-left: 50px;
+      margin-right: 50px;
+      text-align:  center;
+    }
+  }
 }
 
-/* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
-  /* Remove the padding we set earlier */
-  .header,
-  .marketing,
-  .footer {
-    padding-right: 0;
-    padding-left: 0;
+
+
+//extends
+.rectangle{
+  width: 320px;
+  height: 424px;
+  margin-bottom:51px;
+  //background-color: #fff;
+  position: relative;
+  padding-top: 30px;
+  background-color: #f6f2f2;
+
+  border-radius: 4px;
+  border-bottom: 4px solid #D8D8D8;
+
+
+  .rectangle-top{
+
+    .back{
+
+      svg{
+        margin-left: 30px;
+      }
+
+
+    }
+
+    .measure-text{
+      color: $bg-color;
+      display: inline-block;
+      float: right;
+      font-size: 24px;
+      font-weight:bold;
+      //.fjalla-one;
+      margin-right: 30px;
+      font-family: 'Fjalla One', sans-serif;
+
+    }
+    .text{
+      color: $bg-color;
+      text-align: center;
+      margin-top: 60px;
+
+    }
+
+
+
+    .descr{
+      margin-top: 25px;
+
+
+      .descr-text{
+        color: $bg-color;
+        text-align: left;
+        margin-left: 25px;
+
+      }
+      .descr-img{
+        text-align: center;
+        margin-bottom: 10px;
+      }
+    }
+
+
+    .statistics{
+      background-color: #fff;
+      padding: 10px 0;
+
+      //line-height: 2px;
+      .descr-img {
+        text-align: right;
+        display: inline-block;
+        margin-left: 15px;
+
+      }
+      .descr-measure{
+        color: $dark-text-color;
+        font-weight:bold;
+        font-size: 28px;
+        margin-left: 25px;
+        display: inline-block;
+        font-family: "Fjalla One", sans-serif;
+
+      }
+      .descr-text{
+        font-size:13px;
+        margin-top: 7px;
+        letter-spacing: 1px;
+      }
+    }
+
+
+
+
   }
-  /* Space out the masthead */
-  .header {
-    margin-bottom: 30px;
-  }
-  /* Remove the bottom border on the jumbotron for visual effect */
-  .jumbotron {
-    border-bottom: 0;
-  }
+
+
+
+
 }
+
+
+
+.no-border{
+  border: none !important;
+}
+
+.button {
+  background-color: $main-color;
+  border: none;
+  border-radius: 3px;
+  height: 52px;
+  min-width: 176px;
+  //text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: left;
+  color: white;
+  line-height: 26px;
+}
+
+//extends end
+
+
+
