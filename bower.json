@@ -3,12 +3,9 @@
   "private": true,
   "dependencies": {
     "bootstrap-sass": "~3.3.5",
-<<<<<<< HEAD
     "modernizr": "~2.8.1",
     "components-font-awesome": "^5.0.6"
-=======
-    "modernizr": "~2.8.1"
->>>>>>> 1570fc512543808167adf8724964f03d0c5d0505
+
   },
   "overrides": {
     "bootstrap-sass": {
