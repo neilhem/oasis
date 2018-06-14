@@ -20,16 +20,20 @@ $(document).ready(function(){
 
     $(".header-middle h1, .header-middle h4").addClass('animated fadeInLeft');
 
-    $(".feature-left-item p, .feature-right-item p, .integration li svg").addClass('animated zoomIn');
+
 
 
 
      $('section .title h2').waypoint(function () {
          $("section .title h2, section .title p").addClass('animated fadeInRight', "slow");
+         $(".feature-left-item p, .feature-right-item p, .integration li svg, .feature-left-item, .feature-right-item")
+             .addClass('animated zoomIn');
+
      },{
-         offset: "20%"
+         offset: "100%"
      }
     );
+
 
 
 
@@ -47,7 +51,8 @@ $(document).ready(function(){
 
     let scroll = new SmoothScroll('a[href*="#section-"]',{
         speed: 1000,
-        easing: 'easeInOutCubic'
+        easing: 'easeInOutCubic',
+        offset: 70
     });
 
 
