@@ -1,0 +1,888 @@
+html {
+  background: url(../images/bg.jpg);
+  background-size: cover;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  text-align: center;
+  color: white;
+}
+
+#container {
+  width: 1442px;
+  margin: 0 auto;
+}
+
+#header {
+  width: 1054px;
+  height: 25px;
+  margin: 53px auto 130px;
+}
+
+#header #navigation {
+  margin: auto;
+  float: right;
+  width: 100%;
+  height: 25px;
+  display: inline-block;
+}
+
+#navigation ul li{
+  display: inline-block;
+  list-style-type: none;
+  text-align: center;
+  padding: 0 50px 0 0;
+  font-size: 18px;
+}
+
+#navigation ul li a {
+  text-decoration: none;
+  color: white;;
+  font-weight: bold;
+}
+
+#hero {
+  float: left;
+  width: 1442px;
+  height: 970px;
+}
+
+#hero #first {
+  float: left;
+  height: 520px;
+  width: 559px;
+  margin-left: 251px;
+}
+
+#hero #first .oasis {
+  margin-left: 79px;
+  width: 380px;
+  height: 76px;
+}
+
+.oasis p {
+  font-size: 70px;
+  text-align: left;
+  line-height: 76px;
+}
+
+#hero #first .firstdesc {
+  margin-left: 79px;
+  width: 380px;
+  height: 66px;
+  margin-top: 15px;
+}
+
+.firstdesc p {
+  padding: 0;
+  font-weight: light;
+  font-size: 24px;
+  text-align: left;
+}
+
+#hero #first #cta {
+  margin-top: 53px;
+  margin-left: 79px;
+  width: 263px;
+  height: 77px;
+  background-color: #6146D7;
+}
+
+#ctatxt {
+  float: left;
+  width: 183px;
+  padding-top: 1px;
+  color: white;
+}
+
+#ctatxt #df {
+  font-size: 13px;
+  line-height: 13px;
+  margin: 17px 0 0 0;
+  padding: 0;
+}
+
+#ctatxt #as {
+  font-size: 20px;
+  line-height: 13px;
+  margin: 10px 0 0 0;
+  padding: 0;
+}
+
+#applelogo {
+  width: 80px;
+  float: left;
+}
+
+
+#applelogo img{
+  /* apple */
+  margin-top: 12px;
+  width: 48%;
+}
+
+#hero #second {
+  border: 1px solid black;
+  float: left;
+  height: 520px;
+  width: 300px;
+  background: url("../images/phonebg.jpg");
+}
+
+#sblock {
+  width: 243px;
+  height: 256px;
+  margin: 33px 28.5px;
+  position: relative;
+}
+
+#sarrow {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+#sphonestats {
+  position: absolute;
+  right: 0;
+  float: right;
+  height: 28px;
+}
+
+#sphonestats p{
+  margin: 0;
+  font-size: 30px;
+  line-height: 28px;
+  color: #212B36;
+}
+
+#spbtext {
+  width: 229px;
+  height: 99px;
+  position: absolute;
+  left: 0;
+  top: 30px;
+  text-align: left;
+}
+
+#spbtext p {
+  font-size: 14px;
+  line-height: 19px;
+  color: #212B36;
+}
+
+#spbhead {
+  width: 151px;
+  height: 16px;
+  text-align: left;
+  position: absolute;
+  left: 0;
+  top: 180px;
+}
+
+#spbhead p{
+  font-size: 12px;
+  line-height: 16px;
+  color: #212B36;
+  margin: 0;
+}
+
+
+#spbgraph {
+  position: absolute;
+  bottom: 0;
+}
+
+#spbgraph img {
+  width: 243px;
+}
+
+.sgraphblock {
+  width: 299.5px;
+  height: 99px;
+  background: white;
+  position: relative;
+}
+
+.sgbtext {
+  position: absolute;
+  text-align: left;
+  color: #212b36;
+  left: 20px;
+  top: 30%;
+}
+
+.sgbtext p {
+  margin: 0 0 5px;
+}
+
+.sgbheader p{
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.sgbstat p{
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.sgbgraph {
+  position: absolute;
+  right: 14px;
+  top: 35%;
+}
+
+.sgbgraph img {
+  width: 90%;
+}
+
+#hero #third {
+  border: 1px solid black;
+  float: left;
+  height: 450px;
+  width: 939px;
+  margin-left: 251px;
+  background: white;
+  position: relative;
+}
+
+#topblocks {
+  width: 939px;
+  height: 145px;
+  position: absolute;
+}
+
+.topblocks {
+  width: 311px;
+  height: 145px;
+  float: left;
+  position: relative;
+}
+
+.topblocks svg {
+  position: absolute;
+  top: 45px;
+  left: 50px;
+}
+
+.topblocks .tbtext {
+  position: absolute;
+  width: 176px;
+  height: 50px;
+  text-align: left;
+  top: 45px;
+  left: 110px;
+}
+
+#botblocks {
+  width: 939px;
+  height: 303px;
+  margin-top: 145px;
+  position: relative;
+}
+
+#leftbotblock {
+  position: absolute;
+  width: 500px;
+  height: 222px;
+  left: 35px;
+  top: 41px;
+  text-align: left;
+}
+
+#leftbotblock p{
+  margin: 0;
+  font-size: 18px;
+  line-height: 24px;
+  color: #575757;
+}
+
+#rightbotblock {
+  position: absolute;
+  width: 355px;
+  height: 253px;
+  left: 545px;
+  top: 41px;
+  text-align: right;
+}
+
+#rightbotblock p{
+  margin: 0;
+  font-size: 55px;
+  color: #27253F;
+}
+
+.tbtext p {
+  margin: 0;
+  font-size: 18px;
+  line-height: 24px;
+  color: #575757;
+}
+
+#snippets {
+  width: 983px;
+  height: 831px;
+  float: left;
+  margin-top: 5px;
+  margin-left: 250px;
+  position: relative;
+}
+
+#snippets #groupblocks {
+  position: absolute;
+  left: 0;
+  top: 84.5px;
+  width: 469px;
+  height: 662px;
+}
+
+#snippets .snipblocks {
+  width: 469px;
+  height: 144px;
+  margin-top: 0;
+  margin-bottom: 26.6px;
+  border: 1px solid #6146D7;
+}
+
+#snippets .last {
+  margin-bottom: 0;
+}
+
+.snipblocks .blocktext {
+  float: left;
+  width: 310px;
+  height: 70px;
+  margin-left: 20px;
+  margin-top: 37px;
+  text-align: left;
+}
+
+.blocktext p {
+  margin: 0;
+  line-height: 32px;
+  font-size: 24px;
+  color: #C0B2FC;
+}
+
+.snipblocks .blockextra {
+  margin-top: 41px;
+  margin-right: 20px;
+  float: right;
+  text-align: right;
+  height: 62px;
+}
+
+.blockextra p{
+  margin: 0;
+  color: #FBFBFB;
+  font-size: 50px;
+  line-height: 67px;
+}
+
+#snippets #lollipop {
+  position: absolute;
+  right: 80px;
+  top: 84.5px;
+  z-index: 1000;
+}
+
+#snippets #sniptext {
+  color: white;
+  background: #6146D7;
+  position: absolute;
+  bottom: 0;
+  right: 44px;
+  width: 445px;
+  height: 576px;
+  border: 1px solid #6146D7;
+}
+
+#sniptext #snipf {
+  width: 365px;
+  height: 192px;
+  margin-top: 70px;
+  margin-left: 30px;
+  text-align: left;
+}
+
+#snipf p {
+  line-height: 64px;
+  margin: 0;
+  font-size: 45px;
+}
+
+#sniptext #snips {
+  width: 365px;
+  height: 270px;
+  margin-left: 30px;
+  text-align: left;
+  margin-top: 15px;
+}
+
+#snips p {
+  line-height: 33px;
+  margin: 0;
+  font-size: 24px;
+}
+
+#features {
+  width: 1165px;
+  height: 1015px;
+  float: left;
+  margin-top: 90px;
+  margin-left: 138.5px;
+  position: relative;
+}
+
+#features #featuretext .oasis {
+  margin-top: 30px;
+  margin-left: 112.5px;
+  width: 940px;
+  height: 64px;
+}
+
+#features #featuretext .oasis p {
+  text-align: center;
+  margin: 0;
+}
+
+
+#features #featuretext .firstdesc {
+  margin-left: 124px;
+  width: 917px;
+  height: 35px;
+}
+
+#features #featuretext .firstdesc p{
+  text-align: center;
+  margin: 20px;
+}
+
+#leftdescription {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 800px;
+}
+
+.figure {
+  margin: 0 0 0 170px;
+  width: 150px;
+  height: 120px;
+}
+
+.leftdesc {
+  width: 284px;
+  text-align: right;
+}
+
+.leftdesc p {
+  margin: 0;
+  font-size: 25px;
+  line-height: 33px;
+  color: white;
+}
+
+#rightdescription {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 800px;
+}
+
+.rfigure {
+  margin-top: 0px;
+  width: 150px;
+  height: 120px;
+}
+
+.rfigure svg {
+  margin-left: -100px;
+}
+
+.rightdesc {
+  right: 0;
+  width: 284px;
+  text-align: left;
+}
+
+.rightdesc p {
+  margin: 0;
+  font-size: 25px;
+  line-height: 33px;
+  color: white;
+}
+
+#features #featurephone {
+  position: absolute;
+  left: 350.5px;
+  bottom: 0;
+  width: 464px;
+  height: 800px;
+  border: 1px solid black;
+  background: url("../images/phonebg.jpg");
+}
+
+#phoneblock {
+  width: 376px;
+  height: 396px;
+  margin: 49px 44px;
+  position: relative;
+}
+
+#arrow {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+#phonestats {
+  position: absolute;
+  right: 0;
+  float: right;
+  height: 28px;
+}
+
+#phonestats p{
+  margin: 0;
+  font-size: 28px;
+  line-height: 28px;
+  color: #212B36;
+}
+
+#pbhead {
+  width: 233.65px;
+  height: 16px;
+  text-align: left;
+  position: absolute;
+  left: 0;
+  top: 93.45px;
+}
+
+#pbhead p{
+  font-size: 18px;
+  line-height: 16px;
+  color: #212B36;
+  margin: 0;
+}
+
+#pbtext {
+  width: 354px;
+  height: 153px;
+  position: absolute;
+  left: 0;
+  top: 109.45px;
+  text-align: left;
+}
+
+#pbtext p {
+  font-size: 16px;
+  line-height: 21px;
+  color: #212B36;
+}
+
+#pbgraph {
+  position: absolute;
+  bottom: 0;
+}
+
+#pbgraph img {
+  width: 376px;
+}
+
+.graphblock {
+  width: 463.5px;
+  height: 153px;
+  background: white;
+  position: relative;
+}
+
+.gbtext {
+  position: absolute;
+  text-align: left;
+  color: #212b36;
+  left: 44px;
+  top: 32%;
+}
+
+.gbtext p {
+  margin: 0 0 10px;
+}
+
+.gbheader p{
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.gbstat p{
+  font-size: 34px;
+  line-height: 28px;
+}
+
+.gbgraph {
+  position: absolute;
+  right: 20px;
+  top: 28%;
+}
+
+#stats {
+  width: 861px;
+  height: 1251px;
+  float: left;
+  margin-top: 50px;
+  margin-left: 290.5px;
+}
+
+#stats #stattext .oasis {
+  margin-left: 1px;
+  width: 859px;
+  height: 64px;
+}
+
+#stats #stattext .oasis p {
+  text-align: center;
+}
+
+
+#stats #stattext .firstdesc {
+  margin-left: 1px;
+  width: 859px;
+  height: 35px;
+}
+
+#stats #stattext .firstdesc p{
+  text-align: center;
+}
+
+#statblocks {
+  margin-top: 50px;
+  width: 861px;
+  height: 1000px;
+}
+
+#statblocks .statblock {
+  background: url('../images/graph.jpg');
+  width: 861px;
+  height: 187px;
+  margin-bottom: 16.25px;
+}
+
+#statblocks .last {
+  margin-bottom: 0;
+}
+
+.statblock .statheader {
+  float: left;
+  margin-top: 25px;
+  margin-left: 40px;
+  height: 36px;
+  text-align: left;
+}
+
+.statblock .statheader p {
+  margin: 0;
+  font-size: 26px;
+  line-height: 35px;
+  color: #c0b2fc;
+}
+
+.statblock .statnum {
+  height: 42px;
+  float: right;
+  margin-top: 20px;
+  margin-right: 40px;
+  text-align: right;
+}
+
+.statblock .statnum p {
+  margin: 0;
+  font-size: 34px;
+  line-height: 45px;
+  color: #fbfbfb;
+}
+
+#logos {
+  width: 1056px;
+  height: 204px;
+  float: left;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-left: 193px;
+  position: relative;
+}
+
+
+#logos #logotext .oasis {
+  margin-left: 311px;
+  width: 434px;
+  height: 64px;
+}
+
+#logos #logotext .oasis p {
+  margin-top: 0;
+  text-align: center;
+}
+
+#logos #logoblock {
+  position: absolute;
+  width: 1056px;
+  bottom: 5px;
+}
+
+#logoblock div {
+  width: 22%;
+  float: left;
+}
+
+#customer {
+  width: 100%;
+  height: 726px;
+  float: left;
+  margin: 0;
+  border: 1px solid black;
+  background: url(../images/cstbg.jpg);
+  text-align: center;
+}
+
+#custheader {
+  margin: 74px auto;
+  height: 41px;
+}
+
+#custheader p {
+  font-size: 30px;
+  line-height: 40px;
+  margin: 0;
+  color: #27253F;
+  opacity: 0.7;
+}
+
+#custwords {
+  width: 459px;
+  height: 346px;
+  margin-top: 44.5px;
+  background: white;
+  margin-left: 21%;
+  color: #27253F;
+  text-align: left;
+  position: relative;
+  float: left;
+  z-index: 10;
+}
+
+.arr {
+  margin-left: -30px;
+}
+
+#leftarr svg{
+  margin-top: 111.5px;
+}
+
+#rightarr svg {
+  margin-top: -2px;
+}
+
+#custwheader {
+  position: absolute;
+  top: 65px;
+  left: 50px;
+}
+
+#custwheader p {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+#custtext {
+  position: absolute;
+  width: 360px;
+  top: 95px;
+  left: 50px;
+}
+
+#custtext p {
+  font-size: 15px;
+  line-height: 22px;
+  color: #757676;
+}
+
+#custimg {
+  float: left;
+  z-index: 1000;
+}
+
+#custimg img {
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+#contact {
+  background: url("../images/contbg.jpg");
+  width: 100%;
+  height: 649px;
+  margin: 0;
+  float: left;
+  text-align: center;
+  border: 1px solid black;
+}
+
+#contact p {
+  color: white;
+  text-align: center;
+}
+
+#contact #conttxt {
+  margin-top: 180px;
+}
+
+#contact #conttxt #numo {
+  width: 694px;
+  height: 64px;
+  margin-left: 31%;
+}
+
+#contact #conttxt #numo p {
+  font-size: 55px;
+}
+
+#contact #conttxt #numt {
+  width: 527px;
+  height: 69px;
+  margin-left: 34.75%;
+}
+
+#contact #conttxt #numt p {
+  margin-top: 0;
+  font-size: 25px;
+  font-weight: lighter;
+}
+
+#contact #inpform {
+  width: 694px;
+  height: 67px;
+  margin-left: 31%;
+  margin-top: 20px;
+}
+
+#contact #inpform input {
+  height: 67px;
+  font-size: 25px;
+  font-weight: lighter;
+}
+
+#contact #inpform input[type="text"] {
+  width: 500px;
+  margin: 0;
+  padding-left: 10px;
+}
+
+#contact #inpform input[type="submit"] {
+  height: 73px;
+  width: 169px;
+  background: #6146D7;
+  border: #6146D7;
+  margin-left: -3.5px;
+  color: white;
+}
