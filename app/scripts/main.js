@@ -18,7 +18,7 @@ $(document).ready(function(){
         // smartSpeed: 1300
     });
 
-    $(".header-middle h1, .header-middle h4").addClass('animated fadeInLeft');
+    // $(".header-middle h1, .header-middle h4").addClass('animated fadeInLeft');
 
 
 
